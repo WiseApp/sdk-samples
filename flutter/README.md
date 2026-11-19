@@ -2,7 +2,7 @@
 
 ## Run
 
-Needs Flutter 3.24+. iOS also needs Xcode 26+ and CocoaPods.
+Needs Flutter 3.24+ (the sample is on 3.50). iOS also needs Xcode 26+ and CocoaPods.
 
 - **Android:** `flutter run --release`
 - **iOS:** create `ios/Wise.local.xcconfig` with your IDs (see `ios/Wise.xcconfig`), then run `flutter run --release` on a device:
@@ -12,6 +12,6 @@ Needs Flutter 3.24+. iOS also needs Xcode 26+ and CocoaPods.
   WISE_APP_GROUP = group.com.yourcompany.wisesample
   ```
 
-In the app, enter your vendor ID, namespace and class IDs, tap **Initialize**, then join.
+In the app, enter your namespace and class IDs, tap **Initialize**, then join.
 
 More: [Wise SDK overview](https://unity.wiki/p/doc_gtbu5g5bux4psqi5)

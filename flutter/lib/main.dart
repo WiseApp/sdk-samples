@@ -17,7 +17,6 @@ class SamplePage extends StatefulWidget {
 
 class _SamplePageState extends State<SamplePage> {
   // Values with a key are saved on the device.
-  final _vendorId = _Field('Vendor ID', 'e.g. 64b8f0c1a2b3c4d5e6f7a8b9', 'vendorId');
   final _namespace = _Field('Namespace', 'e.g. yourcompany', 'namespace');
   final _classPublicId = _Field('Class public ID', "32-character ID from the class's public link", 'classPublicId');
   final _displayName = _Field('Display name', 'Name shown in the class', null, initial: 'Student');
@@ -29,7 +28,7 @@ class _SamplePageState extends State<SamplePage> {
   bool _ready = false;
   bool _signedIn = false;
 
-  List<_Field> get _fields => [_vendorId, _namespace, _classPublicId, _displayName, _classId];
+  List<_Field> get _fields => [_namespace, _classPublicId, _displayName, _classId];
 
   @override
   void initState() {
@@ -57,7 +56,7 @@ class _SamplePageState extends State<SamplePage> {
   }
 
   Future<void> _initialize() => _run('initialize', () async {
-        await WiseLiveSdk.initialize(vendorId: _vendorId.text, namespace: _namespace.text);
+        await WiseLiveSdk.initialize(namespace: _namespace.text);
         // Screen share (iOS): App Group and extension bundle ID come from ios/Wise.xcconfig via Info.plist.
         if (Platform.isIOS) await WiseLiveSdk.enableScreenShare();
         _ready = true;
@@ -110,7 +109,6 @@ class _SamplePageState extends State<SamplePage> {
           keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           children: [
             const _Section('Your details (from Wise)'),
-            _vendorId.build(),
             _namespace.build(),
             FilledButton.tonal(onPressed: _initialize, child: const Text('Initialize')),
             const _Section('Join as guest'),
