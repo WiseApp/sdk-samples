@@ -1,0 +1,7 @@
+Config.local.xcconfig
+Pods/
+build/
+xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+.DS_Store

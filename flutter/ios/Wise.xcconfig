@@ -1,0 +1,13 @@
+// Build-time IDs. Put your values in Wise.local.xcconfig (git-ignored), e.g.
+//   WISE_BUNDLE_ID = com.yourcompany.wisesample
+//   WISE_TEAM_ID = ABCDE12345
+//   WISE_APP_GROUP = group.com.yourcompany.wisesample
+// Xcode registers them in your team on the first device build (automatic signing).
+WISE_BUNDLE_ID = com.example.wisesample
+WISE_TEAM_ID =
+WISE_APP_GROUP = group.com.example.wisesample
+WISE_SCREENSHARE_BUNDLE_ID = $(WISE_BUNDLE_ID).ScreenShare
+
+#include? "Wise.local.xcconfig"
+
+DEVELOPMENT_TEAM = $(WISE_TEAM_ID)

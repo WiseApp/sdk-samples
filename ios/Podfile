@@ -1,0 +1,13 @@
+source 'https://wise-maven.s3.ap-south-1.amazonaws.com/iOS/specs/'
+source 'https://cdn.cocoapods.org/'
+
+platform :ios, '15.1'
+
+target 'WiseSample' do
+  pod 'WiseLiveSDK', '2.2.0'
+end
+
+# Broadcast Upload Extension (screen share): its own top-level target.
+target 'ScreenShare' do
+  pod 'WiseZoomScreenShare', '6.2.11.1'
+end

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView style="@style/Section" android:text="Your details (from Wise)" />
+        <TextView style="@style/Label" android:text="Namespace" />
+        <EditText android:id="@+id/namespace" style="@style/Field" android:hint="e.g. yourcompany" />
+        <Button android:id="@+id/initialize" style="@style/Action" android:text="Initialize" />
+
+        <TextView style="@style/Section" android:text="Join as guest" />
+        <TextView style="@style/Label" android:text="Class public ID" />
+        <EditText android:id="@+id/classPublicId" style="@style/Field" android:hint="32-character ID from the class's public link" />
+        <TextView style="@style/Label" android:text="Display name" />
+        <EditText android:id="@+id/displayName" style="@style/Field" android:hint="Name shown in the class" android:text="Student" />
+        <Button android:id="@+id/joinPublic" style="@style/Action" android:text="Join by public ID" />
+
+        <TextView android:id="@+id/signInTitle" style="@style/Section" android:text="Sign in (once per install)" />
+        <TextView style="@style/Label" android:text="SSO token" />
+        <EditText
+            android:id="@+id/ssoToken"
+            style="@style/Field"
+            android:fontFamily="monospace"
+            android:gravity="top"
+            android:hint="JWT signed by your backend (eyJ...)"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:minLines="3"
+            android:textSize="12sp" />
+        <LinearLayout style="@style/Row">
+            <Button android:id="@+id/signIn" style="@style/Action" android:text="Sign in" />
+            <Button android:id="@+id/signOut" style="@style/Action" android:layout_marginStart="12dp" android:text="Sign out" />
+        </LinearLayout>
+
+        <TextView style="@style/Section" android:text="Signed-in user" />
+        <TextView style="@style/Label" android:text="Class ID" />
+        <EditText android:id="@+id/classId" style="@style/Field" android:hint="24-character class ID" />
+        <LinearLayout style="@style/Row">
+            <Button android:id="@+id/joinClass" style="@style/Action" android:text="Join class" />
+            <Button android:id="@+id/startClass" style="@style/Action" android:layout_marginStart="12dp" android:text="Start class (teacher)" />
+        </LinearLayout>
+
+        <TextView style="@style/Section" android:text="Events" />
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4F4F4"
+            android:fontFamily="monospace"
+            android:minHeight="100dp"
+            android:padding="8dp"
+            android:textIsSelectable="true"
+            android:textSize="11sp" />
+    </LinearLayout>
+</ScrollView>

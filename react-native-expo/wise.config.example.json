@@ -1,0 +1,11 @@
+{
+  "ios": {
+    "bundleIdentifier": "com.example.wisesample",
+    "appleTeamId": "XXXX",
+    "screenShareBundleIdentifier": "com.example.wisesample.ScreenShare",
+    "appGroup": "group.com.example.wisesample"
+  },
+  "android": {
+    "package": "com.example.wisesample"
+  }
+}
