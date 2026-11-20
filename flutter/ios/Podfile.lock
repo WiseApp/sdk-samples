@@ -2,9 +2,9 @@ PODS:
   - Flutter (1.0.0)
   - wise_live_sdk (1.1.0):
     - Flutter
-    - WiseLiveSDK (= 2.3.0)
+    - WiseLiveSDK (= 2.3.1)
     - WiseZoomSDK (= 6.2.11)
-  - WiseLiveSDK (2.3.0):
+  - WiseLiveSDK (2.3.1):
     - WiseZoomSDK (= 6.2.11)
   - WiseZoomScreenShare (6.2.11.1)
   - WiseZoomSDK (6.2.11)
@@ -28,8 +28,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 71a624a5bc0c04062bf19101d501e466baf2fb47
-  wise_live_sdk: f8f53e4fa63032a84118ea12cf4abf4ec901fabf
-  WiseLiveSDK: f83ff3615815fb82730a0349bd373d46aec06543
+  wise_live_sdk: b687b96f6b8f6f9f656265708d55c5e95c65880a
+  WiseLiveSDK: e3374d3208db706ffa121bbd6a062246042322a6
   WiseZoomScreenShare: fe42d68d711bc8f598b8bdfe7d8efb4a722032a9
   WiseZoomSDK: 7be486d5c71afb014f41f42be8374da8dc4dc7da
 

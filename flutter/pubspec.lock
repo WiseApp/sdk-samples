@@ -462,10 +462,10 @@ packages:
     dependency: "direct main"
     description:
       name: wise_live_sdk
-      sha256: "242a6d33f789ea12557301446c22344ba496920d6d8ed66ede0ec70fae55ecf5"
+      sha256: "73de7298b5c15cd8ee6ef8d296186b8b7d0749dfdfe8b20b549964eddd3b0c1e"
       url: "https://wise-maven.s3.ap-south-1.amazonaws.com/flutter/"
     source: hosted
-    version: "1.1.0"
+    version: "1.1.1"
   xdg_directories:
     dependency: transitive
     description:
