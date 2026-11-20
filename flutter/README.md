@@ -14,4 +14,4 @@ Needs Flutter 3.24+ (the sample is on 3.50). iOS also needs Xcode 26+ and CocoaP
 
 In the app, enter your namespace and class IDs, tap **Initialize**, then join.
 
-More: [Wise SDK overview](https://unity.wiki/p/doc_gtbu5g5bux4psqi5)
+Integration guide: [Flutter](https://unity.wiki/p/doc_q56lwhjtmz6f5p7r)
