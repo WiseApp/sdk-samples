@@ -1838,7 +1838,7 @@ PODS:
     - Yoga
   - SocketRocket (0.7.1):
     - ReactNativeDependencies
-  - WiseReactNativeSdk (1.4.0):
+  - WiseReactNativeSdk (1.4.1):
     - hermes-engine
     - RCTRequired
     - RCTTypeSafety
@@ -2238,7 +2238,7 @@ SPEC CHECKSUMS:
   ReactNativeDependencies: a5164c3ebbe90d992022b5d9cbabbf770a6d7d05
   RNCAsyncStorage: 9aad1f18e1b3d98690ae696b01bd984054108916
   SocketRocket: 37aec555668fb852ec12e3c0de59a86ca58f0871
-  WiseReactNativeSdk: 01b7e4faaaffc278ba850a2d1ebd12439e95a849
+  WiseReactNativeSdk: 9fa369219401214aeaba9692b990b302fbc488e2
   WiseSDK: c8f10666f0cf9b8c5c1561c5d73137b59fd63394
   WiseZoomScreenShare: fe42d68d711bc8f598b8bdfe7d8efb4a722032a9
   WiseZoomSDK: 7be486d5c71afb014f41f42be8374da8dc4dc7da

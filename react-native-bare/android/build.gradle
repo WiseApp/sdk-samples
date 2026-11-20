@@ -18,4 +18,11 @@ buildscript {
     }
 }
 
+// Wise Maven repo: com.wise.sdk:core and the pinned Zoom SDK it depends on.
+allprojects {
+    repositories {
+        maven { url 'https://wise-maven.s3.ap-south-1.amazonaws.com/android/releases' }
+    }
+}
+
 apply plugin: "com.facebook.react.rootproject"
