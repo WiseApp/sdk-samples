@@ -1,11 +1,11 @@
 PODS:
-  - WiseLiveSDK (2.3.1):
+  - WiseLiveSDK (2.3.2):
     - WiseZoomSDK (= 6.2.11)
   - WiseZoomScreenShare (6.2.11.1)
   - WiseZoomSDK (6.2.11)
 
 DEPENDENCIES:
-  - WiseLiveSDK (= 2.3.1)
+  - WiseLiveSDK (= 2.3.2)
   - WiseZoomScreenShare (= 6.2.11.1)
 
 SPEC REPOS:
@@ -15,10 +15,10 @@ SPEC REPOS:
     - WiseZoomSDK
 
 SPEC CHECKSUMS:
-  WiseLiveSDK: e3374d3208db706ffa121bbd6a062246042322a6
+  WiseLiveSDK: 0c23236db5aaf88ba1dd7e0f8a07f69d42f5d2f8
   WiseZoomScreenShare: fe42d68d711bc8f598b8bdfe7d8efb4a722032a9
   WiseZoomSDK: 7be486d5c71afb014f41f42be8374da8dc4dc7da
 
-PODFILE CHECKSUM: 528c751336757c07f6fbda8ea72a03c2cd7359e8
+PODFILE CHECKSUM: 0c515721a9be975629a0426c3a69eb63e176aa5b
 
 COCOAPODS: 1.16.2

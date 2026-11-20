@@ -4,7 +4,7 @@ source 'https://cdn.cocoapods.org/'
 platform :ios, '15.1'
 
 target 'WiseSample' do
-  pod 'WiseLiveSDK', '2.3.1'
+  pod 'WiseLiveSDK', '2.3.2'
 end
 
 # Broadcast Upload Extension (screen share): its own top-level target.
