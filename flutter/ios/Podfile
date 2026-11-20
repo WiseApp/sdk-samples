@@ -1,4 +1,4 @@
-# Wise SDK pods (WiseLiveSDK, Zoom) come from the Wise spec source.
+# Wise SDK pods (WiseSDK, Zoom) come from the Wise spec source.
 source 'https://wise-maven.s3.ap-south-1.amazonaws.com/iOS/specs/'
 source 'https://cdn.cocoapods.org/'
 

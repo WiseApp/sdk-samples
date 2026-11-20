@@ -17,7 +17,11 @@ type Details = { namespace: string; classId: string; classPublicId: string };
 const EMPTY: Details = { namespace: '', classId: '', classPublicId: '' };
 const STORAGE_KEY = 'wise-sample-details';
 
-export default function App() {
+// iOS screen share: the App Group and the broadcast extension's bundle ID, passed in by
+// ios/WiseSample/SceneDelegate.swift from Info.plist (set them in ios/Config.local.xcconfig).
+type Props = { wiseAppGroup?: string; wiseScreenShareBundleId?: string };
+
+export default function App({ wiseAppGroup, wiseScreenShareBundleId }: Props) {
   const [details, setDetails] = useState<Details>(EMPTY);
   const [ready, setReady] = useState(false);
   const [signedIn, setSignedIn] = useState(false);
@@ -62,6 +66,9 @@ export default function App() {
   const initialize = () =>
     run('initialize', async () => {
       await WiseSDK.initialize(details.namespace);
+      if (wiseAppGroup && wiseScreenShareBundleId) {
+        WiseSDK.enableScreenShare(wiseAppGroup, wiseScreenShareBundleId);
+      }
       setReady(true);
     });
 

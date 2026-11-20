@@ -53,6 +53,10 @@
 	<string>Photos can be shared in live classes.</string>
 	<key>RCTNewArchEnabled</key>
 	<true/>
+	<key>WiseAppGroup</key>
+	<string>$(WISE_APP_GROUP)</string>
+	<key>WiseScreenShareBundleId</key>
+	<string>$(WISE_SCREENSHARE_BUNDLE_ID)</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

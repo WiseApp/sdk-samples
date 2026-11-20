@@ -1,8 +1,8 @@
 import UIKit
-import WiseLiveSDK
+import WiseSDK
 
 // LensAppDelegate forwards app lifecycle events to the SDK (Zoom needs them).
-// LensSDK presents the meeting from this window's root view controller.
+// WiseSDK presents the meeting from this window's root view controller.
 // `@objc` is required: the UIApplicationDelegate conformance is inherited from the SDK framework,
 // so Swift doesn't expose these to UIKit on its own (without it the app shows a black screen).
 @main

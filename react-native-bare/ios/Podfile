@@ -36,3 +36,8 @@ target 'WiseSample' do
     )
   end
 end
+
+# Broadcast Upload Extension (screen share): its own top-level target.
+target 'ScreenShare' do
+  pod 'WiseZoomScreenShare', '6.2.11.1'
+end

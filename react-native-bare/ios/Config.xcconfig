@@ -1,0 +1,15 @@
+// Build-time IDs. Put your values in Config.local.xcconfig (git-ignored), e.g.
+//   WISE_BUNDLE_ID = com.yourcompany.wisesample
+//   WISE_TEAM_ID = ABCDE12345
+//   WISE_APP_GROUP = group.com.yourcompany.wisesample
+// Xcode registers them in your team on the first device build (automatic signing).
+// The app passes WISE_APP_GROUP and the extension's bundle ID to JavaScript (see SceneDelegate.swift)
+// for WiseSDK.enableScreenShare.
+WISE_BUNDLE_ID = org.reactjs.native.example.WiseSample
+WISE_TEAM_ID =
+WISE_APP_GROUP = group.com.example.wisesample
+WISE_SCREENSHARE_BUNDLE_ID = $(WISE_BUNDLE_ID).ScreenShare
+
+#include? "Config.local.xcconfig"
+
+DEVELOPMENT_TEAM = $(WISE_TEAM_ID)

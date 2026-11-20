@@ -259,13 +259,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WiseSample/Pods-WiseSample-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WiseLiveSDK/WiseLiveSDK.framework/WiseLiveSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WiseSDK/WiseSDK.framework/WiseSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WiseZoomSDK/MobileRTC.framework/MobileRTC",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/WiseZoomSDK/zoomcml.framework/zoomcml",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WiseLiveSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WiseSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MobileRTC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/zoomcml.framework",
 			);

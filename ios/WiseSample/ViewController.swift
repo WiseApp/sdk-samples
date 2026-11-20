@@ -1,10 +1,10 @@
 import MobileRTC
 import UIKit
-import WiseLiveSDK
+import WiseSDK
 
 final class ViewController: UIViewController {
 
-    private let sdk = LensSDK.shared
+    private let sdk = WiseSDK.shared
     private let defaults = UserDefaults.standard
     private var ready = false
 
@@ -166,7 +166,7 @@ final class ViewController: UIViewController {
 // MARK: - SDK callbacks
 
 extension ViewController: MeetingListener, SSOTokenLoginListener {
-    func onSDKError(error: LensMeetingError, message: String?) { add("onSDKError \(error.code) \(error) detail=\(LensSDK.shared.lastErrorDetail) \(message ?? "")") }
+    func onSDKError(error: LensMeetingError, message: String?) { add("onSDKError \(error.code) \(error) detail=\(WiseSDK.shared.lastErrorDetail) \(message ?? "")") }
     func onMeetingStatus(status: MobileRTCMeetingState) { add("onMeetingStatus \(status.rawValue)") }
     func onMeetingEnded(reason: MobileRTCMeetingEndReason) { add("onMeetingEnded \(reason.rawValue)") }
     func onMeetingNeedPasswordOrDisplayName() { add("onMeetingNeedPasswordOrDisplayName") }

@@ -1,10 +1,10 @@
 PODS:
   - Flutter (1.0.0)
-  - wise_live_sdk (1.1.2):
+  - wise_live_sdk (1.2.0):
     - Flutter
-    - WiseLiveSDK (= 2.3.2)
+    - WiseSDK (= 2.4.0)
     - WiseZoomSDK (= 6.2.11)
-  - WiseLiveSDK (2.3.2):
+  - WiseSDK (2.4.0):
     - WiseZoomSDK (= 6.2.11)
   - WiseZoomScreenShare (6.2.11.1)
   - WiseZoomSDK (6.2.11)
@@ -16,7 +16,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://wise-maven.s3.ap-south-1.amazonaws.com/iOS/specs/:
-    - WiseLiveSDK
+    - WiseSDK
     - WiseZoomScreenShare
     - WiseZoomSDK
 
@@ -28,11 +28,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 71a624a5bc0c04062bf19101d501e466baf2fb47
-  wise_live_sdk: 1f56ed71f630d9c7123c766e83239e98b0a2e94d
-  WiseLiveSDK: 0c23236db5aaf88ba1dd7e0f8a07f69d42f5d2f8
+  wise_live_sdk: 6035da4ccc40d209c527c7eef0593ecbf9b72115
+  WiseSDK: c8f10666f0cf9b8c5c1561c5d73137b59fd63394
   WiseZoomScreenShare: fe42d68d711bc8f598b8bdfe7d8efb4a722032a9
   WiseZoomSDK: 7be486d5c71afb014f41f42be8374da8dc4dc7da
 
-PODFILE CHECKSUM: f88e2141f1b19e92f61f8e9442575bea6faf7227
+PODFILE CHECKSUM: 1f5ebd7e1403903fb79f9d916f64a2ab69a269e9
 
 COCOAPODS: 1.16.2

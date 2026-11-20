@@ -29,9 +29,15 @@ class SceneDelegate: RCTDefaultReactNativeFactoryDelegate, UIWindowSceneDelegate
     reactNativeFactory?.devMenuConfiguration = devMenuConfiguration
     #endif
     
+    // Screen share IDs from Info.plist (set in Config.local.xcconfig), passed to App.tsx as props.
+    let info = Bundle.main.infoDictionary ?? [:]
     reactNativeFactory?.startReactNative(
       withModuleName: "WiseSample",
       in: window,
+      initialProperties: [
+        "wiseAppGroup": info["WiseAppGroup"] as? String ?? "",
+        "wiseScreenShareBundleId": info["WiseScreenShareBundleId"] as? String ?? "",
+      ],
       connectionOptions: connectionOptions
     )
 
