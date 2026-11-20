@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug builds only: plain HTTP for Metro. The Zoom SDK's own network security config (merged into
+     the app) blocks it, and Android then ignores usesCleartextTraffic. Release builds keep Zoom's config. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

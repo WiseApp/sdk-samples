@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Debug builds only: lets the app load JavaScript from Metro (see res/xml). -->
+    <application
+        android:networkSecurityConfig="@xml/wise_debug_network_security_config"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:networkSecurityConfig,android:usesCleartextTraffic" />
+</manifest>
